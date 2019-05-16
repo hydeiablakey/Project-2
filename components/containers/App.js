@@ -4,7 +4,7 @@ import SearchBar from '../presentational/SearchBar';
 import SearchResults from './SearchResults';
 import './App.less';
 
-const API_KEY = '(Your Key Here)';
+const API_KEY = 'UidqL9grHHxhpKkNEj34UYzWGlROX85q';
 
 export default class App extends Component {
 	constructor() {
@@ -12,8 +12,7 @@ export default class App extends Component {
 		this.state = {
 			results: [],
 			searchQuery: "",
-			limit: 25,
-			offset: 0,
+			limit: 25
 		}
 	}
 
@@ -41,20 +40,13 @@ export default class App extends Component {
 		});
 	}
 
-	_handleLoader = ( event ) => {
-		event.preventDefault();
-		let offset = this.state.offset + this.state.limit;
-		this._handleRequest( this.state.searchQuery, offset );
-		this.setState({
-			offset: offset
-		});
-	}
+
 
 	render() {
 		return (
 			<div className="containerApp">
 				<SearchBar handleSearch={ this._handleSearch } handleState={ this.state.searchQuery }  />
-				<SearchResults handleLoader={ this._handleLoader } results={ this.state.results } query={this.state.searchQuery} />
+				<SearchResults results={ this.state.results } query={this.state.searchQuery} />
 			</div>
 		)
 	}

@@ -21,8 +21,6 @@ export default class SearchResults extends Component {
 				  <p className="search-title"> Let the GIFS Begin: <b>{this.props.query}</b> </p>
 				  <div className='search-results-list'>
 					{ listItems }
-
-					{ results.length > 0 ? <SearchResultButtons handleLoader={ this.props.handleLoader } /> : null }
 				  </div>
 		  </div>
 		)
