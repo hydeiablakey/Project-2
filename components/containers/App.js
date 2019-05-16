@@ -16,8 +16,8 @@ export default class App extends Component {
 		}
 	}
 
-	_handleRequest = ( query, offset, newQuery ) => {
-	axios.get(`http://api.giphy.com/v1/gifs/search?q=${ query }&api_key=${ API_KEY }&fmt=json&offset=${ offset }&limit=${ this.state.limit }`)
+	_handleRequest = ( query, newQuery ) => {
+	axios.get(`http://api.giphy.com/v1/gifs/search?q=${ query }&api_key=${ API_KEY }&fmt=json&limit=${ this.state.limit }`)
 		.then( ( res ) => {
 			if (newQuery) {
 				this.setState({
@@ -34,7 +34,7 @@ export default class App extends Component {
 	_handleSearch = ( event ) => {
 		event.preventDefault();
 		const searchQuery = event.target.getElementsByTagName('input')[0].value;
-		this._handleRequest( searchQuery, this.state.offset, searchQuery !== this.state.searchQuery );
+		this._handleRequest( searchQuery, searchQuery !== this.state.searchQuery );
 		this.setState({
 			searchQuery: searchQuery
 		});
