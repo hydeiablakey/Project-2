@@ -1,26 +1,4 @@
-GiphyApp
-=======
 
-![alt text](https://github.com/hydeiablakey/GiphyApp/blob/master/img/giphy_demo.png)
-
-This is a app that allows the user to search for any GIFS using their own specified keywords using [GIPHY](https://giphy.com/)
-
-Getting Started
------
-To get started with this app, you can begin by cloning the `GiphyApp`.
-```
-git clone https://github.com/hydeiablakey/GiphyApp.git && cd giphyApp
-```
-Install the Dependencies:
-```
-npm install or npm i
-```
-Begin Running the Application:
-```
-npm run dev 
-```
-
-Afterwards you should be ready to start using and running the Giphy App here: [localhost:8080/](http://localhost:8080/)
 
 Dependencies 
 -----
