@@ -1,4 +1,6 @@
 import React, {Component} from 'react'; 
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
 
 
 export default class SearchBar extends Component {
@@ -7,7 +9,7 @@ export default class SearchBar extends Component {
 			<div id="top"className="containerSearchBar">
 			   <form onSubmit={ this.props.handleSearch } className="formSearchBar">
 			   		<input className="searchBar" placeholder="Search GIFS Here" type="text"/>
-					<button className="buttonSearchBar" type="submit"><i className="searchBtntext fab fa-searchengin"></i></button>
+						<Button size="small" variant="outlined" type="submit"> <Icon>youtube_searched_for</Icon></Button>
 			   </form>
 			</div>
 		)

@@ -1,8 +1,6 @@
 import React, { Component } from 'react'; 
 import SearchBar from '../presentational/SearchBar';
 import SearchResultItem from '../presentational/SearchResultItem';
-import SearchResultButtons from '../presentational/SearchResultButtons';
-
 
 
 export default class SearchResults extends Component {
