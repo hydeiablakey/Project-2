@@ -1,11 +1,15 @@
 {
   "name": "Giphy",
   "version": "1.0.0",
+  "homepage": "https://github.com/hydeiablakey/Project-2",
   "description": "Giphy project built in react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "npm run dev"
   },
   "author": "Hydeia Blakey",
   "license": "ISC",
@@ -22,6 +26,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "node-fetch": "^2.3.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
