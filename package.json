@@ -2,7 +2,7 @@
   "name": "hydeia-project-2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hydeiablakey/Project-2",
+  "homepage": "https://hydeiablakey.github.io/Project-2/",
   "dependencies": {
     "@material-ui/core": "^4.0.0-rc.0",
     "axios": "^0.18.0",
