@@ -17,7 +17,7 @@ export default class App extends Component {
   }
 
   _handleRequest = ( query, newQuery ) => {
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${ query }&api_key=${ API_KEY }&fmt=json&limit=${ this.state.limit }`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${ query }&api_key=${ API_KEY }&fmt=json&limit=${ this.state.limit }`)
       .then( ( res ) => {
 	if (newQuery) {
 	  this.setState({
